@@ -1,0 +1,28 @@
+{
+  "name": "claude-cowork-mcp",
+  "version": "1.0.0",
+  "description": "Cloud-hosted Claude-to-Claude cowork MCP server. Exposes the Claude API as a set of MCP tools so any MCP client (e.g. Littlebird AI) can call Claude for real AI-to-AI collaboration.",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "keywords": [
+    "mcp",
+    "claude",
+    "anthropic",
+    "cowork",
+    "ai-to-ai",
+    "sse"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.1",
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "express": "^4.21.2",
+    "zod": "^3.23.8"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

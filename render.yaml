@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: claude-cowork-mcp
+    runtime: node
+    plan: free
+    healthCheckPath: /health
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: AUTH_TOKEN
+        sync: false
